@@ -1,47 +1,39 @@
-
-/* PCスマホ共通スタイル */
 body {
-  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,sans-serif;
 }
-
 p {
-  font-size: 15pbx;
+  font-size: 15px;
 }
-/* PC用スタイル */
 body {
   max-width: 1080px;
   min-width: 960px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto o auto;
 }
-/* ヘッダー */
 header {
   display: flex;
   justify-content: space-between;
 }
-/* ナビゲーションのレイアウト */
 #nav-pc {
-  font-size: 14px;
-  padding-top: 15px;
+font-size: 14px;
+padding: 15px;
 }
-/* ナビゲーションのリンクの装飾設定 */
 #nav-pc > a {
   text-decoration: none;
   margin-left: 20px;
 }
 #nav-pc > a:link {
-  color: #0d0d0d
-}
-#nav-pc >a:visited {
   color: #0d0d0d;
 }
-#nav-pc a:hover {
+#nav-pc > a:visited {
+color: #0d0d0d;
+}
+#nav-pc > a:hover {
   color: #0d0d0d;
   text-decoration: underline;
 }
-#nav-pc a:active {
+#nav-pc > a:active {
   color: #0d0d0d;
 }
-/* メインビジュアル */
 #main-visual {
   position: relative;
   height: 400px;
@@ -52,7 +44,7 @@ header {
   left: 0;
   background-color: #2710d5;
   color: #ffffff;
-  border-radius: 0  0 476px 0;
+  border-radius: 0 0 476px 0;
   max-width: 620px;
   height: 100%;
   width: 100%;
@@ -71,13 +63,12 @@ header {
   max-width: 620px;
   border-radius: 476px 0 0 0;
   position: absolute;
-  top: 0;
+  top: o;
   right: 0;
-  z-index: 10;
+  z-index: 0;
 }
-/* 見出し */
 h2 {
-  margin: 40px 0 0 0 ;
+  margin: 40px 0 0 0;
 }
 h2::after {
   content: url("images/line.png");
@@ -86,7 +77,6 @@ h2::after {
 h3 {
   font-size: 27px;
 }
-/* ミッション */
 #mission {
   margin: 80px auto 80px auto;
   width: 100%;
@@ -97,7 +87,7 @@ h3 {
 }
 #mission-flex > div {
   width: 50%;
-  margin: 20px;
+  margin: 29px;
 }
 #mission-photo {
   width: 100%;
@@ -106,43 +96,61 @@ h3 {
   margin-top: 50px;
   width: 100%;
 }
-
-/* プロダクト */
+/* product */
 #product {
   background-color: #fafafa;
-  margin: 80px 0 80px 0
+  margin: 80px 0 80px 0;
   padding: 10px 40px 0px 40px;
 }
-
-/* 外枠 */
-#product  > div {
-  margin-top: 40px;
-  display: flex;
+#product > div {
+margin-top: 40px;
+display: flex;
 }
-
-/* 左のカラム */
 #product-left {
   width: 50%;
-  margin-right: 40px;
+  margin-right: 20px;
 }
-
-/* 右のカラム */
-#product-right  {
+#product-right {
   width: 50%;
   margin-left: 20px;
-  margin-top:80px;
+  margin-top: 80px;
 }
-
-/* 画像と説明枠 */
 #product-left > div {
   position: relative;
   height: 480px;
   margin-right: 20px;
 }
-/* がぞう */
 #product-right > div {
   position: relative;
   height: 480px;
   margin-left: 20px;
 }
-
+.product-photo {
+  width: 100%;
+}
+.product-explain {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 280px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+}
+.product-explain > span {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+.product-explain >h3 {
+  font-size: 20px;
+  margin: 5px 0 5px 0;
+}
+.product-explain > p {
+  font-size: 14px;
+  margin: 0;
+}
+#product-more {
+  margin: 0 auto -42px auto;
+}
